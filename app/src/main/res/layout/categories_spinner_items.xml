@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.efunhub.groceryshop.widget.CustomTextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tvItem"
+    android:textSize="@dimen/font_medium"
+    android:gravity="center_vertical"
+    android:layout_margin="@dimen/_5sdp"
+    android:textColor="#000000"
+    app:fontFamily="@string/font_regular"
+    android:padding="2dip" />

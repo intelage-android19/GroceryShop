@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "555369285630",
+    "firebase_url": "https://restrocustomer-5ce0d.firebaseio.com",
+    "project_id": "restrocustomer-5ce0d",
+    "storage_bucket": "restrocustomer-5ce0d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555369285630:android:99f0feb1e308e520",
+        "android_client_info": {
+          "package_name": "com.efunhub.groceryshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "555369285630-ejim0im0nra9sp6nmmk10qmcrabldkcv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnoA-kKSA7cqksUbhXrmBwYVKNp2HL40Y"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

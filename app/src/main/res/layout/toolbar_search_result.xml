@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@drawable/bg_toolbar"
+        app:layout_collapseMode="pin"
+        android:contentInsetLeft="0dp"
+        android:contentInsetStart="0dp"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        android:contentInsetRight="0dp"
+        android:contentInsetEnd="0dp"
+        app:contentInsetRight="0dp"
+        app:contentInsetEnd="0dp">
+
+        <ImageView
+            android:id="@+id/icMenu"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="start"
+            android:src="@drawable/ic_back_arrow"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_210sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorWhite"
+            android:innerRadius="0dp"
+            android:shape="ring"
+            android:thicknessRatio="1.9"
+            app:cardCornerRadius="@dimen/_8sdp"
+            app:cardElevation="@dimen/_1sdp"
+            app:cardUseCompatPadding="true">
+
+            <com.efunhub.groceryshop.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@null"
+                android:drawableLeft="@drawable/ic_search_gray"
+                android:drawablePadding="@dimen/_10sdp"
+                app:fontFamily="@string/font_regular"
+                android:hint="@string/str_what_are_you_looking"
+                android:paddingEnd="@dimen/_20sdp"
+                android:paddingLeft="@dimen/_20sdp"
+                android:paddingRight="@dimen/_20sdp"
+                android:paddingStart="@dimen/_10sdp"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:focusableInTouchMode="true"
+                android:textColor="@color/colorTextDarkBlue"
+                android:textColorHint="@color/colorTextDarkBlue"
+                android:textSize="@dimen/font_regular" />
+        </androidx.cardview.widget.CardView>
+
+
+        <com.efunhub.groceryshop.widget.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:fontFamily="@string/font_graphik_medium"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_gravity="end|center_horizontal"
+            android:textAllCaps="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/font_regular" />
+
+    </androidx.appcompat.widget.Toolbar>
+</layout>

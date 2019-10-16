@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar_profile">
+
+        </include>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_image" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnUpdateLiner"
+            android:layout_below="@+id/toolbar"
+            android:background="#B5000000">
+
+
+
+
+                <LinearLayout
+                    android:id="@+id/linearlayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:orientation="vertical">
+
+
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvProfileFullName"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_full_name"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:weightSum="2"
+                          >
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvPrfileMobileNumber"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:layout_weight="1"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_mobile"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                        <View android:id="@+id/separator"
+                            android:background="@color/colorPrimary"
+                            android:layout_width = "1dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center"
+                            android:layout_centerVertical ="true"
+                            />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvProfileCountryCode"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:layout_weight="1"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="Country Code"
+                            android:imeOptions="actionDone"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvProfileEmail"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_email"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvProfileAddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_address"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvArea"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_area"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvPincode"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_pin"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        android:visibility="visible"
+                        android:layout_marginBottom="@dimen/_10sdp"
+
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_city"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+
+<!--
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:background="@color/colorWhite"
+                        android:innerRadius="0dp"
+                        android:shape="ring"
+                        android:thicknessRatio="1.9"
+                        android:visibility="visible"
+                        app:cardCornerRadius="@dimen/_10sdp"
+                        app:cardElevation="@dimen/_3sdp"
+                        app:cardUseCompatPadding="true">
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:id="@+id/tvState"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:background="@null"
+                            android:fontFamily="@string/font_regular"
+                            android:gravity="center_vertical"
+                            android:hint="@string/str_state"
+                            android:imeOptions="actionDone"
+                            android:inputType="text"
+                            android:paddingStart="@dimen/_20sdp"
+                            android:paddingLeft="@dimen/_20sdp"
+                            android:paddingEnd="@dimen/_20sdp"
+                            android:paddingRight="@dimen/_20sdp"
+                            android:singleLine="true"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_regular" />
+
+                    </androidx.cardview.widget.CardView>
+-->
+
+
+            </LinearLayout>
+        </ScrollView>
+        <!--  <LinearLayout
+              android:id="@+id/llBtn"
+              android:layout_alignParentBottom="true"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnUpdateLiner"
+
+            >
+
+        <com.efunhub.groceryshop.widget.CustomButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_5sdp"
+
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"
+            android:text="Updaten Profile"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+            <com.efunhub.groceryshop.widget.CustomButton
+                android:id="@+id/btnUpdatePassword"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="Update Password"
+                android:textColor="@color/colorWhite"
+                android:visibility="visible" />
+
+
+
+        </LinearLayout>
+        <!-- </LinearLayout>-->
+    </RelativeLayout>
+</layout>

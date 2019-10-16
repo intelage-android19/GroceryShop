@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/DrawerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        tools:openDrawer="start">
+
+        <FrameLayout
+            android:id="@+id/Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout
+                android:id="@+id/rl_profile"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_toolbar"
+                android:padding="@dimen/_13sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="@dimen/_30sdp"
+                    app:cardPreventCornerOverlap="false">
+
+                    <ImageView
+                        android:id="@+id/ivLogo"
+                        android:src="@drawable/applogo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"/>
+                </androidx.cardview.widget.CardView>
+
+                <!--<de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/_3sdp"
+                    android:src="@drawable/ic_logo" />-->
+
+                <com.efunhub.groceryshop.widget.CustomTextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="bottom"
+                    android:layout_toEndOf="@+id/ivUserImage"
+                    android:padding="@dimen/_13sdp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/font_large"
+                    app:fontFamily="@string/font_graphik_medium" />
+                <!--Here you can give your custom layouts if required-->
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/rl_profile"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/llHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_home" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_home"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llGroKisanConcept"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_subscription" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_gro_kisan_co"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llOffer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_subscription" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_offer"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llOrderHistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_history" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_orders"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMyCart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_cart" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_my_cart"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_account" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_account"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:visibility="gone"
+                        android:id="@+id/llSetting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_settings" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_settings"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llShare"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_menu_share" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_share"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_about_us" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_about_us"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llTermsCon"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_about_us" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_tems_con"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llLogut"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:padding="@dimen/_13sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_23sdp"
+                            android:layout_height="@dimen/_23sdp"
+                            android:layout_marginStart="@dimen/_15sdp"
+                            android:layout_marginLeft="@dimen/_15sdp"
+                            android:contentDescription="@string/app_name"
+                            android:src="@drawable/ic_logout" />
+
+                        <com.efunhub.groceryshop.widget.CustomTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="@dimen/_10sdp"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:text="@string/str_logout"
+                            android:textColor="@color/colorTextBlack"
+                            android:textSize="@dimen/font_regular"
+                            app:fontFamily="@string/font_graphik_medium" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</layout>

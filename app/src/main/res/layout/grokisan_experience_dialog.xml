@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ivExpImage"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/btnClose"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_margin="5dp"
+                android:background="@drawable/close_button_background"
+                android:text="x"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.efunhub.groceryshop.widget.CustomTextView
+                android:id="@+id/tvExpName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="18sp"
+                app:fontFamily="@string/font_graphik_light" />
+
+
+            <com.efunhub.groceryshop.widget.CustomTextView
+                android:id="@+id/tvExpDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="16sp"
+                app:fontFamily="@string/font_graphik_light" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

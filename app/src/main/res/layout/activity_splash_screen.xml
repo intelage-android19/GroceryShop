@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.efunhub.liva_z.activity.SplashScreenActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            android:src="@drawable/splash_image"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:background="#B5000000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="@dimen/_60sdp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                app:cardPreventCornerOverlap="false">
+
+                <ImageView
+                    android:id="@+id/ivLogo"
+                    android:src="@drawable/applogo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"/>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.PaymentMethodAddressActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar_with_back" />
+
+            <FrameLayout
+                android:id="@+id/flPayment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:visibility="gone" />
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <com.efunhub.groceryshop.widget.CustomTextView
+                                app:fontFamily="@string/font_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Mode of Payment"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <RadioGroup
+                                android:id="@+id/radioPayment"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp">
+
+                                <RadioButton
+                                    android:id="@+id/radioCOD"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:checked="true"
+                                    app:fontFamily="@string/font_regular"
+                                    android:text="Cash on Delivery" />
+
+                                <RadioButton
+                                    app:fontFamily="@string/font_regular"
+                                    android:id="@+id/radioCard"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Card Payment" />
+
+                                <RadioButton
+                                    android:id="@+id/radioWallet"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Wallet"
+                                    android:visibility="gone" />
+                            </RadioGroup>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="vertical">
+
+                            <com.efunhub.groceryshop.widget.CustomTextView
+                                app:fontFamily="@string/font_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Delivery Address"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="18sp" />
+
+                            <com.efunhub.groceryshop.widget.CustomTextView
+                                app:fontFamily="@string/font_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Address"
+                                android:textSize="16sp" />
+
+                            <com.efunhub.groceryshop.widget.CustomEditText
+                                app:fontFamily="@string/font_regular"
+                                android:id="@+id/edtPayemntAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:inputType="text" />
+
+                            <com.efunhub.groceryshop.widget.CustomTextView
+                                app:fontFamily="@string/font_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Pincode"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spnPincode"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spnPincode"
+                                android:spinnerMode="dialog"
+                                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+                            <com.efunhub.groceryshop.widget.CustomTextView
+                                app:fontFamily="@string/font_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Area"
+                                android:textSize="16sp" />
+
+                              <com.efunhub.groceryshop.widget.CustomEditText
+                                  android:id="@+id/edtArea"
+                                  android:singleLine="true"
+                                  android:imeOptions="actionDone"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="40dp"
+                                  android:textSize="18sp"
+                                  android:clickable="true"/>
+
+                            <!--<Spinner
+                                android:id="@+id/spnArea"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spnArea"
+                                android:spinnerMode="dialog"
+                                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />-->
+
+
+                            <!--<com.efunhub.grokisan.widget.CustomTextView
+                                app:fontFamily="@string/font_regular"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:text="Select Time"
+                                android:textSize="16sp" />
+
+                            <Spinner
+                                android:id="@+id/spnTimeSlots"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:prompt="@string/spnTime"
+                                android:spinnerMode="dialog"
+                                android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />-->
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <com.efunhub.groceryshop.widget.CustomButton
+                            android:fontFamily="@string/font_regular"
+                            android:id="@+id/btnFinalPayment"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/dimen_5dp"
+                            android:background="@drawable/button_ripple_effect"
+                            android:text="Make Payment"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:visibility="gone" />
+
+                        <!-- <ProgressBar
+                             android:id="@+id/progressBar"
+                             android:layout_centerHorizontal="true"
+                             android:visibility="gone"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content" />-->
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/mainPgBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <androidx.core.widget.ContentLoadingProgressBar
+                android:id="@+id/pgBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

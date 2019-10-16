@@ -1,0 +1,136 @@
+<resources>
+    <string name="app_name">GroceryShop</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="str_welcome">Welcome</string>
+    <string name="str_login">Please login to continue</string>
+    <string name="str_sign_in">Login</string>
+    <string name="str_forgot_password">Forgot Password?</string>
+    <string name="str_forgot_pass">Forgot Password</string>
+    <string name="str_mobile">Mobile</string>
+    <string name="str_countrycode">Country Code</string>
+    <string name="str_password">Password</string>
+    <string name="str_dont_have_account">Don\'t have an account? Sign Up</string>
+    <string name="str_sign_up">Sign Up</string>
+    <string name="str_already_have_account">Already have an account? LogIn</string>
+    <string name="str_email">Email</string>
+    <string name="str_full_name">Full Name</string>
+    <string name="str_what_are_you_looking">What are you looking for?</string>
+    <integer name="Qty">1</integer>
+
+
+    <string name="base_url">https://www.efunhub.in/AppBuilder/groceryshop/api/</string>
+    <string name="images_base_url">http://grokisan.com/images/product/</string>
+    <string name="sub_cat_images_base_url">http://grokisan.com/images/subcategory/</string>
+    <string name="sub_cat_product_images_base_url">http://grokisan.com/images/subcategory/</string>
+    <string name="baner_images_base_url">https://www.efunhub.in/AppBuilder/groceryshop/images/slider/</string>
+
+    <string name="NetworkError">Network Error</string>
+    <string name="no_internet">No Internet</string>
+    <string name="str_Ok">Ok</string>
+    <string name="Error">Error</string>
+    <string name="currency">\u20B9</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="str_profile">Profile</string>
+    <string name="bottom_sheet_option_camera">Use Camera</string>
+    <string name="bottom_sheet_option_gallery">Upload from Gallery</string>
+    <string name="bottom_sheet_option_heading">Add Photo</string>
+    <string name="bottom_sheet_option_remove_photo">Remove Photo</string>
+
+    <string name="no_internet_connected">No Internet connected !</string>
+    <string name="settings">Setting</string>
+
+
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="plesae_wait">Please wait</string>
+    <string name="strProfile">Profile</string>
+    <string name="str_home">Home</string>
+    <string name="str_subscriptions">Subscriptions</string>
+    <string name="str_offer">Offers</string>
+    <string name="str_orders">My Orders</string>
+    <string name="str_my_cart">My Cart</string>
+    <string name="str_account">Account</string>
+    <string name="str_share">Share</string>
+    <string name="str_logout">Logout</string>
+    <string name="str_settings">Settings</string>
+    <string name="str_about_us">About us</string>
+    <string name="str_veg_items">Vegetable Items</string>
+    <string name="str_fruit_items">Fruit Items</string>
+    <string name="str_bestselling_items">Best Selling Items</string>
+    <string name="str_mechanism_items">Grokisan Mechanism</string>
+    <string name="str_experience_items">Grokisan Experience</string>
+
+    <string-array name="arr_categories">
+        <item>Categories</item>
+        <item>Vegetables</item>
+        <item>Fruits</item>
+        <item>Grains</item>
+    </string-array>
+
+    <string name="spnTime">Select Time</string>
+
+    <string-array name="time_slots">
+        <item>12:00 PM - 2:00 PM</item>0
+        <item>3:00 PM - 5:00 PM</item>1
+        <item>6:00 PM - 9:00 PM</item>2
+    </string-array>
+
+    <string name="spnArea">Select Area</string>
+
+    <string name="line"> Not crossed <strike> crossed </strike> </string>
+    <string name="str_sign_in_with">Sign in with</string>
+    <string name="str_introducing">Introducing</string>
+    <string name="str_sub_now">Subscribe Now</string>
+    <string name="str_grains_items">Grain Items</string>
+    <string name="str_address">Address</string>
+    <string name="str_area">Area</string>
+    <string name="str_pin">Pincode</string>
+    <string name="str_city">City</string>
+    <string name="str_state">State</string>
+
+    <string name="otp_dailog">Sit back &amp; Relex! while we verfiy your mobile number</string>
+    <string name="no_otp_detect">(Enter OTP below in case if we fail to detect it)</string>
+
+    <string name="str_gro_kisan_concept">GroKisan is a modern age E-Commerce platform which serves you as a AI based personal caretaker cum nutritionist. It basically works as food recommendation engine which not only recommends you what to eat but also delivers you the same thing at all year-round free delivery *. It helps you maintain and achieve your fitness goals but also take care of your likes and dislikes so that you always EAT RIGHT AND STAY FIT</string>
+
+    <string name="str_how_does_it_works_step">Step one  - Get subscription\n\nStep two – Fill up the short registration form and share all required details\n\nStep Three – Sit and relax GroKisan is at your service
+    </string>
+
+    <string name="str_benifits_title">Benefits you get on being part of GroKisan Concept</string>
+
+    <string name="str_benifits"> 1) Lowest prices than market\n\n
+2)	Year round free delivery\n\n
+3)	Year round free dietary support\n\n
+4)	Personalized recommendation engine\n\n
+5)	A VIRTUAL caretaker which takes care of all your likes  and dislikes\n\n
+6)	We ensure that You EAT RIGHT AND STAY FIT\n\n
+</string>
+    <string name="str_how_much_cost">How much it cost?</string>
+    <string name="str_cost_prize">Only 999 / year</string>
+    <string name="why_gro_kisan">Why Grocery Shop?</string>
+
+
+    <string name="str_fresh_mech">We try offer lowest prices to our customers than they can get in any of the local market this is possible for us because of our innovative supply chain.</string>
+    <string name="str_free_delivery">You just have to get the subscription once a year and you are eligible for all year round free delivery *.</string>
+    <string name="str_qc_assu">We assure you the quality of fruits and vegetables deliverd by us . Freshness and Hygine is always our priority</string>
+    <string name="str_rec_engine">We provide you a ultra modern AI based virtual dietitian cum assistant which recommend fruits and vegetables everyday so that you EAT FRESH AND STAY HEALTHY</string>
+    <string name="str_gro_kisan_co">GroKisan Concept</string>
+    <string name="str_offers">Offers</string>
+    <string name="str_tems_con">Terms And Conditions</string>
+    <string name="spnPincode">Postal Code</string>
+    <string name="msg_token_fmt">FCM TOKEN</string>
+    <string name="str_skip">Skip</string>
+</resources>
